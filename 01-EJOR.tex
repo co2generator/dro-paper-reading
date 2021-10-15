@@ -35,13 +35,11 @@
 \usetikzlibrary{arrows,shapes,chains}  
 \renewcommand{\algorithmicrequire}{\textbf{Input:}}  % Use Input in the format of Algorithm  
 \renewcommand{\algorithmicensure}{\textbf{Output:}} % Use Output in the format of Algorithm  
-\title {Weekly Report No.125}
-\author{Tao Fang} 
+\title{Reading Notes: Wasserstein Distributionally Robust Shortest Path Problem}
+\author{CO2MAKER} 
 \begin {document}
 \maketitle 
 \allowdisplaybreaks[4]
-
-This week I read a paper recommended by brother Lu, \cite{RN370}. In this paper, they study a Wasserstein distributionally robust version of Shortest Path Problem (SSP).
 
 \section{Background} 
 
@@ -188,7 +186,7 @@ In this paper, they provide two versions of model, with support set and without 
 	And then the Lagrange dual function is:
 	\begin{align}
 		g(\lambda, \bm{s})  = & \sup_{\bm{\xi} \in \Xi} \mathcal{L}(\bm{\xi}, \lambda, \bm{s}) \\
-		 = & \int_{\Xi} \sum_{i=1}^{N} \Big ( h(\bm{p}, t, \bm{\xi}) - s_i - \lambda d(\bm{\xi}, \hat{\bm{\xi}}^i) \Big ) K(d\bm{\xi}, \hat{\bm{\xi}}^i) + \frac{1}{N} \sum_{i=1}^{N} s_i + \lambda \epsilon_N
+		= & \int_{\Xi} \sum_{i=1}^{N} \Big ( h(\bm{p}, t, \bm{\xi}) - s_i - \lambda d(\bm{\xi}, \hat{\bm{\xi}}^i) \Big ) K(d\bm{\xi}, \hat{\bm{\xi}}^i) + \frac{1}{N} \sum_{i=1}^{N} s_i + \lambda \epsilon_N
 	\end{align}
 	Consequently, the dual problem is:
 	\begin{align}
@@ -199,7 +197,7 @@ In this paper, they provide two versions of model, with support set and without 
 			& \lambda \geq 0
 		\end{aligned}\right. 
 	\end{align}
-
+	
 	Since $h(\bm{p}, t, \bm{\xi}) = [\bm{\xi}^\top\bm{p} - t]^+ $, then,
 	\begin{align}
 		& \sup_{\bm{\xi} \in \Xi} \left\{\bm{\xi}^\top \bm{p} - t - \lambda \|\bm{\xi} - \hat{\bm{\xi}}^i \|_p \right\} \leq s_i \label{con-1} \\
@@ -305,7 +303,7 @@ The traveling time is finite in practice, and thus its support set should not be
 		\end{aligned} \right.
 	\end{align}
 	Substitute the above problem into constraints (\ref{cons}). And the DRSP model eventually given by:
-		\begin{align}
+	\begin{align}
 		\min_{\bm{p}, t, \bm{s}, \lambda, \bm{\gamma}_i, \bm{\eta}_i} \quad &  t + \frac{1}{\alpha} \left\{\frac{1}{N} \sum_{i=1}^{N} s_i + \lambda \epsilon_N\right\} \\
 		s.t. \quad & \left\{
 		\begin{aligned}
