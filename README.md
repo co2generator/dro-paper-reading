@@ -8,9 +8,9 @@ Distributionally Robust Optimization (DRO) has attracted many research interests
 
 ### Paper List
 
-+ [Delage, E. and Y. Ye (2010). Distributionally robust optimization under moment uncertainty with application to data-driven problems. Operations Research 58(3), 595–612.](https://pubsonline.informs.org/doi/10.1287/opre.1090.0741)
++ 01 - [Wang, Z., K. You, S. Song, and Y. Zhang (2020). Wasserstein distributionally robust shortest path problem. European Journal of Operational Research 284(1), 31–43.](https://www.sciencedirect.com/science/article/pii/S037722172030028X)
 
-+ [Wang, Z., K. You, S. Song, and Y. Zhang (2020). Wasserstein distributionally robust shortest path problem. European Journal of Operational Research 284(1), 31–43.](https://www.sciencedirect.com/science/article/pii/S037722172030028X)
++ 02 - [Delage, E. and Y. Ye (2010). Distributionally robust optimization under moment uncertainty with application to data-driven problems. Operations Research 58(3), 595–612.](https://pubsonline.informs.org/doi/10.1287/opre.1090.0741)
 
 
 
